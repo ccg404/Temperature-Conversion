@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div class="bg-slate-400 w-full h-screen flex justify-center items-center text-center">
+      <form class="bg-white p-10 rounded-lg text-center">
+        <div class="flex flex-col gap-4 mb-5">
+          <h1 class="text-2xl font-bold mb-5">Temparature Converter</h1>
+          <input
+            type="number"
+            name="temp"
+            id="temp"
+            class="border-black border-2 p-2 rounded-md"
+            value="0"
+          />
+          <div class="flex justify-center gap-4 font-bold items-center space-x-4">
+            <label class="inline-flex items-center space-x-2">
+              <input type="radio" name="unit" id="celsiusBtn" class="appearance-none h-4 w-4 border border-black rounded-full checked:bg-black checked:border-transparent focus:outline-none transition duration-200">
+              <span class="text-gray-700">Celsius</span>
+            </label>
+            <label class="inline-flex items-center space-x-2">
+              <input type="radio" name="unit" id="fahrenheitBtn" class="appearance-none h-4 w-4 border border-black rounded-full checked:bg-blue-600 checked:border-transparent focus:outline-none transition duration-200">
+              <span class="text-gray-700">Fahrenheit</span>
+            </label>
+          </div>
+          
+          <button
+            type="submit"
+            class="bg-green-500 text-white font-bold p-2 rounded-md hover:bg-green-700"
+            onclick="convertTemp(event)"
+          >
+            Convert
+          </button>
+        </div>
+        <div>
+          <p id="result" class="text-2xl font-bold"></p>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
