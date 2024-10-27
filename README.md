@@ -12,4 +12,4 @@ A simple project that converts temperatures between Celsius, Fahrenheit, and Kel
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/temperature-conversion.git
+   git clone https://github.com/ccg404/Temperature-Conversion.git
